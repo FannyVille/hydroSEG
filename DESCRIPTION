@@ -1,16 +1,30 @@
 Package: hydroSEG
-Title: What the Package Does (One Line, Title Case)
+Title: Hydrograph segmentation and discretization between natural event or hydropeak
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Fanny",
+           family = "Ville",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "fnny.ville@gmail.com")
+Description: A hydrograph is the temporal variation of the flow of water 
+    and it can be interesting to isolate each peak (event) in order to better characterize the hydrology of 
+    a river. However, some rivers have hydroelectric facilities that disturb the natural hydrology. 
+    This package aims 
+    (i) to isolate each hydrological event, 
+    (ii) to determine whether it is of natural origin or caused by a hydroelectric power plant, and 
+    (iii) to draw up a statistical balance of the hydrology. 
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    magrittr,
+    janitor,
+    tibble,
+    ggplot2,
+    ggforce,
+    grid,
+    dplyr,
+    ggtext,
+    ggpubr
